@@ -249,8 +249,13 @@ def average(number_list):
     There is no defined answer if the list given is empty. It's fine if
     this raises an error when given an empty list.
     """
+    count = 0
+    total = 0
+    for num in number_list:
+        count += 1.0
+        total += num
 
-    return 0
+    return total/count
 
 
 #############################################################################
