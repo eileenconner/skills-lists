@@ -65,8 +65,8 @@ def print_indeces(my_list):
     2 Volvo
 
     """
-
-    print "Nothing at all"
+    for index in range(len(my_list)):
+        print index, my_list[index]
 
 
 def long_words(word_list):
