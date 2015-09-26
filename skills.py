@@ -126,8 +126,19 @@ def largest_int(number_list):
         True
 
     """
+    largest_int = None
+    if len(number_list) == 0:
+        return None
 
-    return 0
+    for num in number_list:
+        if largest_int is None:
+            largest_int = num
+        elif num > largest_int:
+            largest_int = num
+        else:
+            continue
+
+    return largest_int
 
 
 def halvesies(number_list):
