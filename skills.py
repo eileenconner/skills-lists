@@ -21,8 +21,12 @@ def all_odd(number_list):
         []
 
     """
+    odd_numbers = []
+    for item in number_list:
+        if item % 2 != 0:
+            odd_numbers.append(item)
 
-    return ['the wrong thing']
+    return odd_numbers
 
 
 def all_even(number_list):
