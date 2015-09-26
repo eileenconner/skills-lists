@@ -189,8 +189,11 @@ def sum_numbers(number_list):
         0
 
     """
+    number_sum = 0
+    for num in number_list:
+        number_sum += num
 
-    return None
+    return number_sum
 
 
 def mult_numbers(number_list):
