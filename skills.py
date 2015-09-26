@@ -153,8 +153,11 @@ def halvesies(number_list):
         [0.5, 2.5]
 
     """
+    halved_numbers = []
+    for num in number_list:
+        halved_numbers.append(num / 2.0)
 
-    return []
+    return halved_numbers
 
 
 def word_lengths(word_list):
