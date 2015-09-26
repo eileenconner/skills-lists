@@ -67,7 +67,8 @@ def print_indeces(my_list):
     """
     for index in range(len(my_list)):
         print index, my_list[index]
-    # Cynthia did an example like this in study hall/review Friday
+    # Cynthia did an example like this in study hall/review Friday.
+    # Without that, I could have been really stumped here.
 
 
 def long_words(word_list):
@@ -109,8 +110,8 @@ def smallest_int(number_list):
             smallest_int = num
         elif num < smallest_int:
             smallest_int = number_list
-        else:
-            continue
+        # I initially also put an else: continue
+        # but realized I didn't need it for this to work.
 
     return smallest_int
 
@@ -136,8 +137,7 @@ def largest_int(number_list):
             largest_int = num
         elif num > largest_int:
             largest_int = num
-        else:
-            continue
+        # ditto re: else: continue
 
     return largest_int
 
@@ -242,8 +242,8 @@ def join_strings(word_list):
         concatenated_string += word
 
     return concatenated_string
-    # I'm not sure whether this is technically a good thing to do with strings!
-    # should I be treating this some other way, since string are immutable?
+    # I was unsure about this at first since strings are immutable
+    # But then I realized I'm rebinding the variable, not changing the string.
 
 
 def average(number_list):
@@ -292,6 +292,9 @@ def advanced_join_strings(list_of_words):
         concatenated_string_2 += (word + ', ')
 
     return concatenated_string_2[:-2]
+
+    # I know you can reuse local variable names in different functions
+    # I just changed this variable name for ease of reading/understanding
 
 # END OF ASSIGNMENT: You can ignore everything below.
 ##############################################################################
