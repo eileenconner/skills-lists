@@ -236,8 +236,13 @@ def join_strings(word_list):
         ''
 
     """
+    concatenated_string = ""
+    for word in word_list:
+        concatenated_string += word
 
-    return "Not the right thing"
+    return concatenated_string
+    # I'm not sure whether this is technically a good thing to do with strings!
+    # should I be treating this some other way, since string are immutable?
 
 
 def average(number_list):
