@@ -214,8 +214,11 @@ def mult_numbers(number_list):
         1
 
     """
+    number_product = 1
+    for num in number_list:
+        number_product *= num
 
-    return None
+    return number_product
 
 
 def join_strings(word_list):
